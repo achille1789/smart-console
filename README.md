@@ -22,6 +22,8 @@ File explanation:
 Insert the library as usual:
 > <script src="browser/smart-console.js"></script>
 
+Write 'c' instead of 'console' and use one of the method shortcuts.  
+
 Write the shortcut for the console method and check the console:
 
 ![console logs](browser/1.png)
@@ -31,6 +33,17 @@ Shortcuts available:
 
 ![shortcuts results](browser/3.png)
 
+### Colors
+You can add 4 default colors for text and background and bold formatting.
 
+Colors are available only for log().
+
+How to add colors (see above image):
+* Green = Success -> Add 'S' for just green text, add 'B' for bold text, add 'BG' for green in background
+* Blue = Info -> Add 'I' for just blue text, add 'B' for bold text, add 'BG' for blue in background
+* Amber = Warning -> Add 'W' for just amber text, add 'B' for bold text, add 'BG' for green in background
+* Red = Danger -> Add 'D' for just red text, add 'B' for bold text, add 'BG' for green in background
+
+__Style can be added only to the whole message__
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
