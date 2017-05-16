@@ -1,6 +1,6 @@
 # smart-console
 
-Simple JavaScript library that provides shortcuts to manage the console methods and to add colors.
+Simple JavaScript and lightweight library that provides shortcuts to manage the console methods and to add colours.
 Suitable for browsers and for NodeJS.
 
 Every console object method (for more info see: [MDN](https://developer.mozilla.org/en/docs/Web/API/console) and
@@ -10,12 +10,12 @@ Every console object method (for more info see: [MDN](https://developer.mozilla.
 * Warning
 * Danger
 
-__The script can have different effects based on the browser used__
+__The script may have different effects depending on the browser that is used__
 
-File explanation:
-* index.html - list of examples
-* browser folder - it has 2 files suitable to be used on a browser, one is normal and one minify
-* nodejs folder - it has the NodeJS module and the package.json
+File structure:
+* index.html         - Shows examples of all available console logs. 
+* browser directory  - Contains 2 files suitable to be included for use within a browser console. One is minified. 
+* nodejs directory   - Contains the file necessary for including within a nodejs project. 
 
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
