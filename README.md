@@ -17,5 +17,14 @@ File explanation:
 * browser folder - it has 2 files suitable to be used on a browser, one is normal and one minify
 * nodejs folder - it has the NodeJS module and the package.json
 
+# How to use it:
+## Browser version
+Insert the library as usual:
+> <script src="browser/smart-console.js"></script>
+
+Write the shortcut for the console method:
+![console logs](1.png)
+Check the console
+[console logs](2.png)
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
