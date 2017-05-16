@@ -34,7 +34,7 @@ Write the shortcut for the console method and check the console:
 If you forget the shortcuts' name:
 > c.l(c);
 
-For the log() messages you can use 3 different ways to insert a variable and you can give a bold style:
+For the log() messages you can use 3 different ways to insert a variable and you can give the bold style:
 
 ![shortcuts results](browser/4.png)
 ![shortcuts results](browser/5.png)
@@ -45,10 +45,10 @@ You can add 4 default colors for the text and the background and the bold format
 Colors are available only for log().
 
 How to add colors (see above image):
-* Green = Success -> Add 'S' for just green text, add 'B' for bold text, add 'BG' for green in background
-* Blue = Info -> Add 'I' for just blue text, add 'B' for bold text, add 'BG' for blue in background
-* Amber = Warning -> Add 'W' for just amber text, add 'B' for bold text, add 'BG' for amber in background
-* Red = Danger -> Add 'D' for just red text, add 'B' for bold text, add 'BG' for red in background
+* Green = Success -> Add 'S' for just green text, add 'B' for bold text, add 'BG' for green background
+* Blue = Info -> Add 'I' for just blue text, add 'B' for bold text, add 'BG' for blue background
+* Amber = Warning -> Add 'W' for just amber text, add 'B' for bold text, add 'BG' for amber background
+* Red = Danger -> Add 'D' for just red text, add 'B' for bold text, add 'BG' for red background
 
 __Style can be added only to the whole message__
 
