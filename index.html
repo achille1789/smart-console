@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="smart-console.js"></script>
+    <script src="smart-console.min.js"></script>
 </head>
 
 <body>
@@ -10,19 +10,105 @@
     <h1>A Web Page</h1>
     <p id="demo">A Paragraph</p>
 
-</body>
     <script>
-        c.lS("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lI("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lW("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lD("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lSB("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lIB("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lWB("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lDB("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lSBG("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lIBG("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lWBG("Hello, %s. You've called me %d times.", "Bob", 3);
-        c.lDBG("Hello, %s. You've called me %d times.", "Bob", 3);
+        // console.clear()
+        c.c();
+
+        // console.assert()
+        function greaterThan(a,b) {
+            c.a(a > b, {"message":"a is not greater than b","a":a,"b":b});
+        }
+        greaterThan(5,6);
+
+        // console.count([label])
+        function login(name) {
+            c.cn(name + ' logged in');
+        }
+        login("Pablo");
+
+        // console.debug()
+        c.d("debug");
+
+        // console.dir(obj)
+        c.dir(document.body);
+
+        // console.dirxml(obj)
+        c.dx(document.body);
+
+        // console.error()
+        function logName(obj) {
+            if (obj.name === undefined) {
+                c.e("Name is undefined");
+            }
+        }
+        logName({});
+
+        // console.group() - console.groupCollapsed() - console.groupEnd()
+        c.l("This is the outer level");
+        c.g();
+        c.l("Level 1");
+        c.gc();
+        c.l("Level 2");
+        c.l("More Level 2");
+        c.l("More more Level 2");
+        c.ge();
+        c.l("Back to level 1");
+        c.ge();
+        c.l("This is the outer level");
+
+        // console.info()
+        c.i("info");
+
+        // console.log()
+        c.l("log message");
+        c.lI("log message");
+        c.lIB("log message");
+        c.lIBG("log message");
+
+        // console.profile() - console.profileEnd()
+        function processPixels() {
+            c.p("processPixels()");
+            // later, after processing pixels
+            c.pe();
+        }
+
+        // console.table()
+        function Person(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+        var john = new Person("John", "Smith");
+        var jane = new Person("Jane", "Doe");
+        var emily = new Person("Emily", "Jones");
+        c.tb([john, jane, emily]);
+
+        // console.time([label]) - console.timeEnd([label])
+        c.t('total');
+        c.t('init arr');
+        var arr = new Array(10000);
+        c.te('init arr');
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = new Object();
+        }
+        c.te('total');
+
+        // console.timeStamp()
+        c.ts('check out this custom timestamp thanks to console.timeStamp()!');
+
+        // console.trace()
+        function add(num) {
+            if (num > 0) {
+                c.tr("recursion:", num);
+                return num + add(num - 1);
+            } else {
+                return 0;
+            }
+        }
+        add(1);
+
+        // console.warn()
+        c.w('warning message');
     </script>
+
+</body>
 </html>
