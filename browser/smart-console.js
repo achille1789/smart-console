@@ -1,3 +1,12 @@
+/*!
+ * smart-console <https://github.com/achille1789/smart-console>
+ *
+ * Copyright (c) 2017, Vanni.
+ * Licensed under the MIT License.
+ */
+
+'use strict';
+
 var c = {
     a: (...extraParam) => console.assert(...extraParam),                // console.assert()
     c: () => console.clear(),                                           // console.clear()
