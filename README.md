@@ -23,21 +23,35 @@ Insert the library as usual:
 > <script src="browser/smart-console.js"></script>
 
 Write the shortcut for the console method:
+
 > c.l("log message");
+
 > c.lS("log message");
+
 > c.lSB("log message");
+
 > c.lSBG("log message");
+
 > c.lI("log message");
+
 > c.lIB("log message");
+
 > c.lIBG("log message");
+
 > c.lW("log message");
+
 > c.lWB("log message");
+
 > c.lWBG("log message");
+
 > c.lD("log message");
+
 > c.lDB("log message");
+
 > c.lDBG("log message");
 
 Check the console
+
 ![console results](browser/2.png)
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
