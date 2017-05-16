@@ -1,14 +1,14 @@
 # smart-console
 
-Simple JavaScript library that provides shortcuts to manage the console methods and to add colors.
+Simple JavaScript library that provides shortcuts to manage the console methods and to add bold style and colors.
 Suitable for browsers and for NodeJS.
 
 Every console object method (for more info see: [MDN](https://developer.mozilla.org/en/docs/Web/API/console) and
 [Google API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)) has a name shortcut and predefined colors can be added to the log() messages:
-* Success
-* Info
-* Warning
-* Danger
+* Success (green)
+* Info  (blue)
+* Warning   (yellow)
+* Danger    (red)
 
 __The script can have different effects based on the browser used__
 
@@ -24,25 +24,23 @@ Insert the library as usual:
 
 Write 'c' instead of 'console' and use one of the method shortcuts.  
 
+![shortcuts results](browser/3.png)
+
 Write the shortcut for the console method and check the console:
 
 ![console logs](browser/1.png)
 ![console results](browser/2.png)
 
-Shortcuts available:
-
-![shortcuts results](browser/3.png)
-
-If you forget the shortcuts:
+If you forget the shortcuts' name:
 > c.l(c);
 
-For the log() you can use 3 different ways to insert a variable and you can give a bold style:
+For the log() messages you can use 3 different ways to insert a variable and you can give a bold style:
 
 ![shortcuts results](browser/4.png)
 ![shortcuts results](browser/5.png)
 
 #### Colors
-You can add 4 default colors for text and background and bold formatting.
+You can add 4 default colors for the text and the background and the bold formatting.
 
 Colors are available only for log().
 
@@ -58,7 +56,7 @@ __Style can be added only to the whole message__
 Insert the module as usual:
 > const {c} = require("./smart-console.js");
 
-Follow the same instructions for the browser version, bold style is not supported.
+Follow the same instructions for the browser version, the bold style is not supported.
 
 ![console logs](browser/6.png)
 ![console results](browser/7.png)
