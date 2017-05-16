@@ -21,7 +21,9 @@ File explanation:
 ## Browser version
 Insert the library as usual:
 > <script src="browser/smart-console.js"></script>
-c.l("log message");
+
+Write the shortcut for the console method:
+> c.l("log message");
 c.lS("log message");
 c.lSB("log message");
 c.lSBG("log message");
@@ -35,8 +37,6 @@ c.lD("log message");
 c.lDB("log message");
 c.lDBG("log message");
 
-Write the shortcut for the console method:
-![console logs](browser/1.png)
 Check the console
 ![console results](browser/2.png)
 
