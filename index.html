@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="browser/smart-console.min.js"></script>
+    <script src="browser/smart-console.js"></script>
 </head>
 
 <body>
@@ -60,7 +60,12 @@
         c.i("info");
 
         // console.log()
+        let str = "Hello";
+        c.l("Let is: " + str);   // Usual
+        c.l("Let is: %s", str);  // C-like
+        c.l(`Let is: ${str}`);   // Template literals
         c.l("log message");
+        c.lB("log message");  // Bold style
         c.lS("log message");
         c.lSB("log message");
         c.lSBG("log message");
@@ -117,6 +122,8 @@
 
         // console.warn()
         c.w('warning message');
+
+        c.l(c);
     </script>
 
 </body>

@@ -17,8 +17,8 @@ File explanation:
 * browser folder - it has 2 files suitable to be used on a browser, one is normal and one minify
 * nodejs folder - it has the NodeJS module and the package.json
 
-# How to use it:
-## Browser version
+## How to use it:
+### Browser version
 Insert the library as usual:
 > <script src="browser/smart-console.js"></script>
 
@@ -33,7 +33,15 @@ Shortcuts available:
 
 ![shortcuts results](browser/3.png)
 
-### Colors
+If you forget the shortcuts:
+> c.l(c);
+
+For the log() you can use 3 different ways to insert a variable and you can give a bold style:
+
+![shortcuts results](browser/4.png)
+![shortcuts results](browser/5.png)
+
+#### Colors
 You can add 4 default colors for text and background and bold formatting.
 
 Colors are available only for log().
@@ -41,9 +49,18 @@ Colors are available only for log().
 How to add colors (see above image):
 * Green = Success -> Add 'S' for just green text, add 'B' for bold text, add 'BG' for green in background
 * Blue = Info -> Add 'I' for just blue text, add 'B' for bold text, add 'BG' for blue in background
-* Amber = Warning -> Add 'W' for just amber text, add 'B' for bold text, add 'BG' for green in background
-* Red = Danger -> Add 'D' for just red text, add 'B' for bold text, add 'BG' for green in background
+* Amber = Warning -> Add 'W' for just amber text, add 'B' for bold text, add 'BG' for amber in background
+* Red = Danger -> Add 'D' for just red text, add 'B' for bold text, add 'BG' for red in background
 
 __Style can be added only to the whole message__
+
+### NodeJS version
+Insert the module as usual:
+> const {c} = require("./smart-console.js");
+
+Follow the same instructions for the browser version, bold style is not supported.
+
+![console logs](browser/6.png)
+![console results](browser/7.png)
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
