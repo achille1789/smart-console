@@ -23,8 +23,8 @@ Insert the library as usual:
 > <script src="browser/smart-console.js"></script>
 
 Write the shortcut for the console method:
-![console logs](1.png)
+![console logs](browser/1.png)
 Check the console
-[console logs](2.png)
+[console logs](browser/2.png)
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
