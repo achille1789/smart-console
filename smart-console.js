@@ -1,0 +1,22 @@
+var c = {
+    a: (...data) => console.assert(...data),
+    c: () => console.clear(),
+    cn: (data) => data ? console.count(data) : console.count(),
+    d: (...data) => console.debug(...data),
+    dir: (data) => console.dir(data),    // non-standard
+    dx: (data) => console.dirxml(data),   // non-standard
+    e: (...data) => console.error(...data),  //to test
+    g: () => console.group(),
+    gc: () => console.groupCollapsed(),
+    ge: () => console.groupEnd(),
+    i: (...data) => console.info(...data),
+    l: (...data) => console.log(...data),
+    p: (data) => data ? console.profile(data) : console.profile(),
+    pe: () => console.profileEnd(),
+    tb: (data) => console.table(data),
+    t: (data) => data ? console.time(data) : console.time(),
+    te: (data) => data ? console.timeEnd(data) : console.timeEnd(),
+    ts: (data) => data ? console.timeStamp(data) : console.timeStamp(),   // non-standard
+    tr: () => console.trace(),   // to check
+    w: (...data) => console.warn(...data),
+}
