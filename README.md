@@ -62,9 +62,11 @@ __Style can be added only to the whole message__
 Insert the module as usual:
 > npm install --save smart-console
 
-> const {c} = require("./smart-console.js");
+> const {c} = require("smart-console");
 
 Follow the same instructions for the browser version, the bold style is not supported.
+
+This module is derived from the browser version and some of the console methods may not work in the terminal (i.e. console.debug()).
 
 ![console logs](browser/6.png)
 ![console results](browser/7.png)
