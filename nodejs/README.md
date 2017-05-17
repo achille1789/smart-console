@@ -31,8 +31,8 @@ c.l('test');
 
 Write the shortcut for the console method and check the console:
 
-![console logs](browser/6.png)
-![console results](browser/7.png)
+![console logs](../browser/6.png)
+![console results](../browser/7.png)
 
 If you forget the shortcuts' name:
 > c.l(c);
