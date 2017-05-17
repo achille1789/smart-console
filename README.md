@@ -1,6 +1,6 @@
 # smart-console
 
-Simple JavaScript library that provides shortcuts to manage the console methods and to add bold style and colors.
+Simple JavaScript library that provides shorthand methods to manage console output with 0 dependencies. Customize your console output with different colors and bold style.
 Suitable for browsers and for NodeJS.
 
 Every console object method (for more info see: [MDN](https://developer.mozilla.org/en/docs/Web/API/console) and
@@ -22,7 +22,13 @@ File explanation:
 Insert the library as usual:
 > <script src="browser/smart-console.js"></script>
 
-Write 'c' instead of 'console' and use one of the method shortcuts.  
+Write 'c' instead of 'console' and use one of the method shortcuts. For example:
+
+> console.log('test');
+
+Becomes:
+
+> c.l('test');
 
 ![shortcuts results](browser/3.png)
 
@@ -54,11 +60,15 @@ __Style can be added only to the whole message__
 
 ### NodeJS version
 Insert the module as usual:
+> npm install --save smart-console
+
 > const {c} = require("./smart-console.js");
 
 Follow the same instructions for the browser version, the bold style is not supported.
 
 ![console logs](browser/6.png)
 ![console results](browser/7.png)
+
+[For Issues](https://github.com/achille1789/smart-console/issues)
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
