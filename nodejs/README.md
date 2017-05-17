@@ -27,9 +27,7 @@ Becomes
 c.l('test');
 ```
 
-![shortcuts results](browser/3.png)
-
-This module is derived from the browser version and some of the console methods may not work in the terminal (i.e. console.debug()).
+![shortcuts results](../browser/8.png).
 
 Write the shortcut for the console method and check the console:
 
@@ -39,10 +37,10 @@ Write the shortcut for the console method and check the console:
 If you forget the shortcuts' name:
 > c.l(c);
 
-For the log() messages you can use 3 different ways to insert a variable (bold is not supported in the terminal):
+For the log() messages you can use 3 different ways to insert a variable:
 
-![shortcuts results](browser/4.png)
-![shortcuts results](browser/5.png)
+![shortcuts results](../browser/9.png)
+![shortcuts results](../browser/10.png)
 
 #### Colors
 You can add 4 default colors for the text and the background.
