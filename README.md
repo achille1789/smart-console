@@ -20,15 +20,19 @@ File explanation:
 ## How to use it:
 ### Browser version
 Insert the library as usual:
-> <script src="browser/smart-console.js"></script>
+```javascript
+<script src="browser/smart-console.js"></script>
+```
 
 Write 'c' instead of 'console' and use one of the method shortcuts. For example:
-
-> console.log('test');
+```javascript
+console.log('test');
+```
 
 Becomes:
-
-> c.l('test');
+```javascript
+c.l('test');
+```
 
 ![shortcuts results](browser/3.png)
 
@@ -38,7 +42,9 @@ Write the shortcut for the console method and check the console:
 ![console results](browser/2.png)
 
 If you forget the shortcuts' name:
+```javascript
 > c.l(c);
+```
 
 For the log() messages you can use 3 different ways to insert a variable and you can give the bold style:
 
@@ -60,10 +66,12 @@ __Style can be added only to the whole message__
 
 ### NodeJS version
 Insert the module as usual:
+```javascript
 > npm install --save smart-console
-
+```
+```javascript
 > const {c} = require("smart-console");
-
+```
 Follow the same instructions for the browser version, the bold style is not supported.
 
 This module is derived from the browser version and some of the console methods may not work in the terminal (i.e. console.debug()).
