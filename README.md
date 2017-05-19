@@ -2,7 +2,7 @@
 
 Simple JavaScript library that provides shorthand methods to manage console output with 0 dependencies. Customize your console output with different colors and formats style.
 
-You can find the same library for the NodeJS [here](https://github.com/achille1789/smart-console-npdejs).
+You can find the same library for the NodeJS [here](https://github.com/achille1789/smart-console-nodejs).
 
 Every console object method (for more info see: [MDN](https://developer.mozilla.org/en/docs/Web/API/console) and
 [Google API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)) has a name shortcut and predefined colors can be added to the log() messages.
@@ -186,7 +186,6 @@ c.lsY("text") size 200% + bold + yellow
 ![shortcuts results](img/4.png)
 ![shortcuts results](img/5.png)
 ![shortcuts results](img/6.png)
-![shortcuts results](img/7.png)
 
 ### Background Color + Bold for log() method
 Background Colors use upper case, bold style is added by default
