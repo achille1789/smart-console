@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="browser/smart-console.js"></script>
+    <script src="smart-console.js"></script>
 </head>
 
 <body>
@@ -59,26 +59,6 @@
         // console.info()
         c.i("info");
 
-        // console.log()
-        let str = "Hello";
-        c.l("Let is: " + str);   // Usual
-        c.l("Let is: %s", str);  // C-like
-        c.l(`Let is: ${str}`);   // Template literals
-        c.l("log message");
-        c.lB("log message");  // Bold style
-        c.lS("log message");
-        c.lSB("log message");
-        c.lSBG("log message");
-        c.lI("log message");
-        c.lIB("log message");
-        c.lIBG("log message");
-        c.lW("log message");
-        c.lWB("log message");
-        c.lWBG("log message");
-        c.lD("log message");
-        c.lDB("log message");
-        c.lDBG("log message");
-
         // console.profile() - console.profileEnd()
         function processPixels() {
             c.p("processPixels()");
@@ -122,6 +102,133 @@
 
         // console.warn()
         c.w('warning message');
+
+        // console.log()
+        // let str = "Hello";
+        // c.l("Let is: " + str);   // Usual
+        // c.l("Let is: %s", str);  // C-like
+        // c.l(`Let is: ${str}`);   // Template literals
+        // c.l("log message");
+        c.lb("log message");  // Bold style
+        c.lu("log message");
+        c.lt("log message");
+        c.li("log message");
+        c.ls("log message");
+
+        c.lA("log message");
+        c.lB("log message");
+        c.lC("log message");
+        c.lG("log message");
+        c.lK("log message");
+        c.lM("log message");
+        c.lN("log message");
+        c.lO("log message");
+        c.lP("log message");
+        c.lR("log message");
+        c.lU("log message");
+        c.lW("log message");
+        c.lY("log message");
+
+        c.lbA("log message");
+        c.lbB("log message");
+        c.lbC("log message");
+        c.lbG("log message");
+        c.lbK("log message");
+        c.lbM("log message");
+        c.lbN("log message");
+        c.lbO("log message");
+        c.lbP("log message");
+        c.lbR("log message");
+        c.lbU("log message");
+        c.lbW("log message");
+        c.lbY("log message");
+
+        c.luA("log message");
+        c.luB("log message");
+        c.luC("log message");
+        c.luG("log message");
+        c.luK("log message");
+        c.luM("log message");
+        c.luN("log message");
+        c.luO("log message");
+        c.luP("log message");
+        c.luR("log message");
+        c.luU("log message");
+        c.luW("log message");
+        c.luY("log message");
+
+        c.ltA("log message");
+        c.ltB("log message");
+        c.ltC("log message");
+        c.ltG("log message");
+        c.ltK("log message");
+        c.ltM("log message");
+        c.ltN("log message");
+        c.ltO("log message");
+        c.ltP("log message");
+        c.ltR("log message");
+        c.ltU("log message");
+        c.ltW("log message");
+        c.ltY("log message");
+
+        c.liA("log message");
+        c.liB("log message");
+        c.liC("log message");
+        c.liG("log message");
+        c.liK("log message");
+        c.liM("log message");
+        c.liN("log message");
+        c.liO("log message");
+        c.liP("log message");
+        c.liR("log message");
+        c.liU("log message");
+        c.liW("log message");
+        c.liY("log message");
+
+        c.lsA("log message");
+        c.lsB("log message");
+        c.lsC("log message");
+        c.lsG("log message");
+        c.lsK("log message");
+        c.lsM("log message");
+        c.lsN("log message");
+        c.lsO("log message");
+        c.lsP("log message");
+        c.lsR("log message");
+        c.lsU("log message");
+        c.lsW("log message");
+        c.lsY("log message");
+
+        c.lABG("log message");
+        c.lBBG("log message");
+        c.lCBG("log message");
+        c.lGBG("log message");
+        c.lKBG("log message");
+        c.lMBG("log message");
+        c.lNBG("log message");
+        c.lOBG("log message");
+        c.lPBG("log message");
+        c.lRBG("log message");
+        c.lUBG("log message");
+        c.lWBG("log message");
+        c.lYBG("log message");
+
+        c.lsABG("log message");
+        c.lsBBG("log message");
+        c.lsCBG("log message");
+        c.lsGBG("log message");
+        c.lsKBG("log message");
+        c.lsMBG("log message");
+        c.lsNBG("log message");
+        c.lsOBG("log message");
+        c.lsPBG("log message");
+        c.lsRBG("log message");
+        c.lsUBG("log message");
+        c.lsWBG("log message");
+        c.lsYBG("log message");
+
+        var json = {"pas": "rex", "pas1": "rex", "pas2": "rex", "pas3": "rex"};
+        c.j(json);
 
         c.l(c);
     </script>

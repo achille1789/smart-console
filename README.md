@@ -1,76 +1,236 @@
 # smart-console
 
-Simple JavaScript library that provides shorthand methods to manage console output with 0 dependencies. Customize your console output with different colors and bold style.
-Suitable for browsers and for NodeJS.
+Simple JavaScript library that provides shorthand methods to manage console output with 0 dependencies. Customize your console output with different colors and formats style.
+
+You can find the same library for the NodeJS [here](https://github.com/achille1789/smart-console-npdejs).
 
 Every console object method (for more info see: [MDN](https://developer.mozilla.org/en/docs/Web/API/console) and
-[Google API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)) has a name shortcut and predefined colors can be added to the log() messages:
-* Success (green)
-* Info  (blue)
-* Warning   (yellow)
-* Danger    (red)
+[Google API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)) has a name shortcut and predefined colors can be added to the log() messages.
 
 __The script can have different effects based on the browser used__
 
-File explanation:
+__With this version some shorthand are changed__
+
+## Files explanation:
 * index.html - list of examples
-* browser folder - it has 2 files suitable to be used on a browser, one is normal and one minify
-* nodejs folder - it has the NodeJS module and the package.json
+* 2 files suitable to be used on a browser, one is normal and one minify
 
 ## How to use it:
-### Browser version
 Insert the library as usual:
-> <script src="browser/smart-console.js"></script>
-
+```javascript
+<script src="smart-console.js"></script>
+```
 Write 'c' instead of 'console' and use one of the method shortcuts. For example:
-
-> console.log('test');
-
+```javascript
+console.log('test');
+```
 Becomes:
+```javascript
+c.l('test');
+```
 
-> c.l('test');
+### Shorthands for console methods
+All the shorthand methods use lower case
+```javascript
+c.a() = console.assert()
+c.c() = console.clear()
+c.cn() = console.count()
+c.d() = console.debug()
+c.dir() = console.dir()
+c.dx() = console.dirxml()
+c.e() = console.error()
+c.g() = console.group()
+c.gc() = console.groupCollapsed()
+c.ge() = console.groupEnd()
+c.i() = console.info()
+c.l() = console.log()
+c.p() = console.profile()
+c.pe() = console.profileEnd()
+c.tb() = console.table()
+c.t() = console.time()
+c.te() = console.timeEnd()
+c.ts() = console.timeStamp()
+c.tr() = console.trace()
+c.w() = console.warn()
+c.j() = console.log() for logging JavaScript JSON objects
+```
 
-![shortcuts results](browser/3.png)
+For log() messages you can use 3 different ways to insert a variable:
+```javascript
+let str = "Awesome";
+c.l("Smart Console is " + str);
+c.l("Smart Console is %s", str);
+c.l(`Smart Console is ${str}`);
+```
 
-Write the shortcut for the console method and check the console:
+### Format styles for log() method
+Format styles use lower case
+```javascript
+c.lb() = bold
+c.lu() = underline
+c.lt() = line-through
+c.li() = italic
+c.ls() = size 200%
+```
+![shortcuts results](img/1.png)
 
-![console logs](browser/1.png)
-![console results](browser/2.png)
+### Colors for log() method
+Colors use upper case
+```javascript
+c.lA("text") amber/gold
+c.lB("text") blue
+c.lC("text") cyan
+c.lG("text") green
+c.lK("text") black
+c.lM("text") magenta
+c.lN("text") brown
+c.lO("text") orange
+c.lP("text") pink
+c.lR("text") red
+c.lU("text") purple
+c.lW("text") white
+c.lY("text") yellow
+```
 
-If you forget the shortcuts' name:
+### Bold + Colors for log() method
+Format styles use lower case and Colors use upper case
+```javascript
+c.lbA("text") bold + amber/gold
+c.lbB("text") bold + blue
+c.lbC("text") bold + cyan
+c.lbG("text") bold + green
+c.lbK("text") bold + black
+c.lbM("text") bold + magenta
+c.lbN("text") bold + brown
+c.lbO("text") bold + orange
+c.lbP("text") bold + pink
+c.lbR("text") bold + red
+c.lbU("text") bold + purple
+c.lbW("text") bold + white
+c.lbY("text") bold + yellow
+```
+
+### Underline + Bold + Colors for log() method
+Format styles use lower case and Colors use upper case, bold style is added by default
+```javascript
+c.luA("text") underline + bold + amber/gold
+c.luB("text") underline + bold + blue
+c.luC("text") underline + bold + cyan
+c.luG("text") underline + bold + green
+c.luK("text") underline + bold + black
+c.luM("text") underline + bold + magenta
+c.luN("text") underline + bold + brown
+c.luO("text") underline + bold + orange
+c.luP("text") underline + bold + pink
+c.luR("text") underline + bold + red
+c.luU("text") underline + bold + purple
+c.luW("text") underline + bold + white
+c.luY("text") underline + bold + yellow
+```
+
+### line-through + Bold + Colors for log() method
+Format styles use lower case and Colors use upper case, bold style is added by default
+```javascript
+c.ltA("text") line-through + bold + amber/gold
+c.ltB("text") line-through + bold + blue
+c.ltC("text") line-through + bold + cyan
+c.ltG("text") line-through + bold + green
+c.ltK("text") line-through + bold + black
+c.ltM("text") line-through + bold + magenta
+c.ltN("text") line-through + bold + brown
+c.ltO("text") line-through + bold + orange
+c.ltP("text") line-through + bold + pink
+c.ltR("text") line-through + bold + red
+c.ltU("text") line-through + bold + purple
+c.ltW("text") line-through + bold + white
+c.ltY("text") line-through + bold + yellow
+```
+
+### italic + Bold + Colors for log() method
+Format styles use lower case and Colors use upper case, bold style is added by default
+```javascript
+c.liA("text") italic + bold + amber/gold
+c.liB("text") italic + bold + blue
+c.liC("text") italic + bold + cyan
+c.liG("text") italic + bold + green
+c.liK("text") italic + bold + black
+c.liM("text") italic + bold + magenta
+c.liN("text") italic + bold + brown
+c.liO("text") italic + bold + orange
+c.liP("text") italic + bold + pink
+c.liR("text") italic + bold + red
+c.liU("text") italic + bold + purple
+c.liW("text") italic + bold + white
+c.liY("text") italic + bold + yellow
+```
+
+### size 200% + Bold + Colors for log() method
+Format styles use lower case and Colors use upper case, bold style is added by default
+```javascript
+c.lsA("text") size 200% + bold + amber/gold
+c.lsB("text") size 200% + bold + blue
+c.lsC("text") size 200% + bold + cyan
+c.lsG("text") size 200% + bold + green
+c.lsK("text") size 200% + bold + black
+c.lsM("text") size 200% + bold + magenta
+c.lsN("text") size 200% + bold + brown
+c.lsO("text") size 200% + bold + orange
+c.lsP("text") size 200% + bold + pink
+c.lsR("text") size 200% + bold + red
+c.lsU("text") size 200% + bold + purple
+c.lsW("text") size 200% + bold + white
+c.lsY("text") size 200% + bold + yellow
+```
+![shortcuts results](img/2.png)
+![shortcuts results](img/3.png)
+![shortcuts results](img/4.png)
+![shortcuts results](img/5.png)
+![shortcuts results](img/6.png)
+![shortcuts results](img/7.png)
+
+### Background Color + Bold for log() method
+Background Colors use upper case, bold style is added by default
+```javascript
+c.lABG("text") background color + bold + amber/gold
+c.lBBG("text") background color + bold + blue
+c.lCBG("text") background color + bold + cyan
+c.lGBG("text") background color + bold + green
+c.lKBG("text") background color + bold + black
+c.lMBG("text") background color + bold + magenta
+c.lNBG("text") background color + bold + brown
+c.lOBG("text") background color + bold + orange
+c.lPBG("text") background color + bold + pink
+c.lRBG("text") background color + bold + red
+c.lUBG("text") background color + bold + purple
+c.lWBG("text") background color + bold + white
+c.lYBG("text") background color + bold + yellow
+```
+
+### size 200% + Background Color + Bold for log() method
+Format styles use lower case and Background Colors use upper case, bold style is added by default
+```javascript
+c.lsABG("text") size 200% + background color + bold + amber/gold
+c.lsBBG("text") size 200% + background color + bold + blue
+c.lsCBG("text") size 200% + background color + bold + cyan
+c.lsGBG("text") size 200% + background color + bold + green
+c.lsKBG("text") size 200% + background color + bold + black
+c.lsMBG("text") size 200% + background color + bold + magenta
+c.lsNBG("text") size 200% + background color + bold + brown
+c.lsOBG("text") size 200% + background color + bold + orange
+c.lsPBG("text") size 200% + background color + bold + pink
+c.lsRBG("text") size 200% + background color + bold + red
+c.lsUBG("text") size 200% + background color + bold + purple
+c.lsWBG("text") size 200% + background color + bold + white
+c.lsYBG("text") size 200% + background color + bold + yellow
+```
+![shortcuts results](img/8.png)
+![shortcuts results](img/9.png)
+
+__If you forget the shortcuts' name:__
+```javascript
 > c.l(c);
+```
 
-For the log() messages you can use 3 different ways to insert a variable and you can give the bold style:
-
-![shortcuts results](browser/4.png)
-![shortcuts results](browser/5.png)
-
-#### Colors
-You can add 4 default colors for the text and the background and the bold formatting.
-
-Colors are available only for log().
-
-How to add colors (see above image):
-* Green = Success -> Add 'S' for just green text, add 'B' for bold text, add 'BG' for green background
-* Blue = Info -> Add 'I' for just blue text, add 'B' for bold text, add 'BG' for blue background
-* Amber = Warning -> Add 'W' for just amber text, add 'B' for bold text, add 'BG' for amber background
-* Red = Danger -> Add 'D' for just red text, add 'B' for bold text, add 'BG' for red background
-
-__Style can be added only to the whole message__
-
-### NodeJS version
-Insert the module as usual:
-> npm install --save smart-console
-
-> const {c} = require("smart-console");
-
-Follow the same instructions for the browser version, the bold style is not supported.
-
-This module is derived from the browser version and some of the console methods may not work in the terminal (i.e. console.debug()).
-
-![console logs](browser/6.png)
-![console results](browser/7.png)
-
-[For Issues](https://github.com/achille1789/smart-console/issues)
+[Report an Issue](https://github.com/achille1789/smart-console/issues)
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
