@@ -232,6 +232,5 @@ __If you forget the shortcuts' name:__
 ```
 
 [For Issues](https://github.com/achille1789/smart-console/issues)
->>>>>>> origin/master
 
 [![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=flat-square)](https://github.com/achille1789/smart-console/blob/master/LICENSE)
