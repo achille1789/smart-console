@@ -63,6 +63,37 @@ c.l("Smart Console is %s", str);
 c.l(`Smart Console is ${str}`);
 ```
 
+The new method j() can be used to log JS and JSON objects using JSON.stringify
+```javascript
+var jsonObj = {"pas": "rex", "pas1": "rex", "pas2": "rex", "pas3": "rex"};
+c.j(jsonObj);
+{
+    "pas": "rex",
+    "pas1": "rex",
+    "pas2": "rex",
+    "pas3": "rex"
+}
+var jsObj = {pas: "rex", pas1: "rex", pas2: "rex", pas3: "rex"};
+c.j(jsObj);
+{
+    "pas": "rex",
+    "pas1": "rex",
+    "pas2": "rex",
+    "pas3": "rex"
+}
+```
+A second parameter can be added to insert white spaces. By default they are set to 4
+```javascript
+var jsonObj = {"pas": "rex", "pas1": "rex", "pas2": "rex", "pas3": "rex"};
+c.j(jsonObj, 2);
+{
+  "pas": "rex",
+  "pas1": "rex",
+  "pas2": "rex",
+  "pas3": "rex"
+}
+```
+
 ### Format styles for log() method
 Format styles use lower case
 ```javascript
