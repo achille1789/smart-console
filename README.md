@@ -1,15 +1,16 @@
 # smart-console
 
-Simple JavaScript library that provides shorthand methods to manage console output with 0 dependencies. Customize your console output with different colors and formats style.
+Simple JavaScript library that provides shorthand methods to manage console output with 0 dependencies. Customize your console output with different colors and formats style. Manage the new Performance Object.
 
 You can find the same library for the NodeJS [here](https://github.com/achille1789/smart-console-nodejs).
 
 Every console object method (for more info see: [MDN](https://developer.mozilla.org/en/docs/Web/API/console) and
 [Google API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)) has a name shortcut and predefined colors can be added to the log() messages.
 
-__The script can have different effects based on the browser used__
+## Version 3.0
+__New Feature:__ Inserted the main methods from Performance Object, for more info [see here](https://developer.mozilla.org/it/docs/Web/API/Performance) and [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/performance).
 
-__With this version some shorthand are changed__
+__The script can have different effects based on the browser used__
 
 ## Files explanation:
 * index.html - list of examples
@@ -93,6 +94,25 @@ c.j(jsonObj, 2);
   "pas3": "rex"
 }
 ```
+
+### Performance object
+```javascript
+p.m = performance.mark()
+p.n = performance.now()
+p.t = performance.timing
+```
+
+```javascript
+var t1 = p.n();
+for (let i = 0; i < 15000; i++) {
+    var loop = i;
+}
+var t2 = p.n();
+c.l("Call to do the loop took " + (t2 - t1) + " milliseconds.");
+
+var timing = p.t;
+```
+![shortcuts results](img/10.png)
 
 ### Format styles for log() method
 Format styles use lower case

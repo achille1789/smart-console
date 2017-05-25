@@ -7,6 +7,7 @@
 
 'use strict';
 
+// console object
 const c = {
     a: (...extraParam) => console.assert(...extraParam),                    // console.assert()
     c: () => console.clear(),                                               // console.clear()
@@ -149,4 +150,11 @@ const c = {
     lsUBG: (text, ...extraParam) => console.log("%c" + text, "font-size: 200%; background-color: #800080; font-weight: bold; color: #FFFFFF;", ...extraParam),  // purple
     lsWBG: (text, ...extraParam) => console.log("%c" + text, "font-size: 200%; background-color: #FFFFFF; font-weight: bold;", ...extraParam),  // white
     lsYBG: (text, ...extraParam) => console.log("%c" + text, "font-size: 200%; background-color: #FFFF00; font-weight: bold;", ...extraParam),  // yellow
-}
+};
+
+// performance object
+const p = {
+    m: (name) => performance.mark(name),
+    n: () => performance.now(),
+    t: performance.timing,
+};

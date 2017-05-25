@@ -227,12 +227,26 @@
         c.lsWBG("log message");
         c.lsYBG("log message");
 
+        // display obj in json format
         var json = {"pas": "rex", "pas1": "rex", "pas2": "rex", "pas3": "rex"};
         c.j(json);
         var jsObj = {pas: "rex", pas1: "rex", pas2: "rex", pas3: "rex"};
         c.j(jsObj, 2);
 
+        // console methods reminder
         c.l(c);
+
+        // performance.now()
+        var t1 = p.n();
+        for (let i = 0; i < 15000; i++) {
+            var loop = i;
+        }
+        var t2 = p.n();
+        c.l("Call to do the loop took " + (t2 - t1) + " milliseconds.");
+
+        // performance.timing
+        var timing = p.t;
+        c.l(timing);
     </script>
 
 </body>
