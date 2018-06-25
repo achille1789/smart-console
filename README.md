@@ -7,8 +7,7 @@ You can find the same library for the NodeJS [here](https://github.com/achille17
 Every console object method (for more info see: [MDN](https://developer.mozilla.org/en/docs/Web/API/console) and
 [Google API](https://developers.google.com/web/tools/chrome-devtools/console/console-reference)) has a name shortcut and predefined colors can be added to the log() messages.
 
-## Version 3.0
-__New Feature:__ Inserted the main methods from Performance Object, for more info [see here](https://developer.mozilla.org/it/docs/Web/API/Performance) and [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/performance).
+## Version 4.0
 
 __The script can have different effects based on the browser used__
 
@@ -34,8 +33,8 @@ c.l('test');
 All the shorthand methods use lower case
 ```javascript
 c.a() = console.assert()
-c.c() = console.clear()
-c.cn() = console.count()
+c.cl() = console.clear()
+c.c() = console.count()
 c.d() = console.debug()
 c.dir() = console.dir()
 c.dx() = console.dirxml()
